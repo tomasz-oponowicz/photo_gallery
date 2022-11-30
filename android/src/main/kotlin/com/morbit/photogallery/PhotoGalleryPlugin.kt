@@ -311,7 +311,7 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                         putStringArray(
                             android.content.ContentResolver.QUERY_ARG_SORT_COLUMNS,
                             arrayOf(
-                                MediaStore.Images.Media.DATE_MODIFIED
+                                MediaStore.Images.Media.DATE_TAKEN
                             )
                         )
                         putInt(
@@ -383,7 +383,7 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                         putStringArray(
                             android.content.ContentResolver.QUERY_ARG_SORT_COLUMNS,
                             arrayOf(
-                                MediaStore.Video.Media.DATE_MODIFIED
+                                MediaStore.Video.Media.DATE_TAKEN
                             )
                         )
                         putInt(
