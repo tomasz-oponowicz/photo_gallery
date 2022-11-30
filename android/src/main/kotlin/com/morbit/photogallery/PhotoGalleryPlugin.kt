@@ -307,9 +307,6 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                             putStringArray(android.content.ContentResolver.QUERY_ARG_SQL_SELECTION_ARGS, arrayOf(albumId))
                         }
 
-                        // Limit & Offset
-                        putInt(android.content.ContentResolver.QUERY_ARG_LIMIT, limit)
-                        putInt(android.content.ContentResolver.QUERY_ARG_OFFSET, offset)
                         // Sort
                         putStringArray(
                             android.content.ContentResolver.QUERY_ARG_SORT_COLUMNS,
@@ -326,6 +323,10 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                                 android.content.ContentResolver.QUERY_SORT_DIRECTION_ASCENDING
                             }
                         )
+
+                        // Limit & Offset
+                        putInt(android.content.ContentResolver.QUERY_ARG_LIMIT, limit)
+                        putInt(android.content.ContentResolver.QUERY_ARG_OFFSET, offset)
                     },
                     null
                 )
@@ -379,9 +380,6 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                             putStringArray(android.content.ContentResolver.QUERY_ARG_SQL_SELECTION_ARGS, arrayOf(albumId))
                         }
 
-                        // Limit & Offset
-                        putInt(android.content.ContentResolver.QUERY_ARG_LIMIT, limit)
-                        putInt(android.content.ContentResolver.QUERY_ARG_OFFSET, offset)
                         // Sort
                         putStringArray(
                             android.content.ContentResolver.QUERY_ARG_SORT_COLUMNS,
@@ -398,6 +396,10 @@ class PhotoGalleryPlugin : FlutterPlugin, MethodCallHandler {
                                 android.content.ContentResolver.QUERY_SORT_DIRECTION_ASCENDING
                             }
                         )
+
+                        // Limit & Offset
+                        putInt(android.content.ContentResolver.QUERY_ARG_LIMIT, limit)
+                        putInt(android.content.ContentResolver.QUERY_ARG_OFFSET, offset)
                     },
                     null
                 )
